@@ -84,6 +84,18 @@ const config: Config = {
       defaultMode: 'dark',
     }
   } satisfies Preset.ThemeConfig,
+  plugins: [
+    async function tailwindcssPlugin() {
+      return {
+        name: 'tailwindcss-plugin',
+        configurePostCss(postCss) {
+          postCss.plugins.push(require('@tailwindcss/postcss'));
+          postCss.plugins.push(require('autoprefixer'));
+          return postCss;
+        }
+      }
+    }
+  ]
 };
 
 export default config;
