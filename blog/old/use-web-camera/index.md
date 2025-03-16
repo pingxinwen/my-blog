@@ -8,7 +8,7 @@ date: 2021-04-20
 
 这里主要是使用 MediaStream 获取视频流，然后利用 video 标签显示视频获取内容。Javascript 代码如下：
 
-<!--- truncate -->
+<!-- truncate -->
 
 ```js
 //获取video节点
