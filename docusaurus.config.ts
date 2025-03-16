@@ -82,8 +82,11 @@ const config: Config = {
     },
     colorMode: {
       defaultMode: 'dark',
-    }
+    },
   } satisfies Preset.ThemeConfig,
+  future: {
+    experimental_faster: true
+  }
 };
 
 export default config;
